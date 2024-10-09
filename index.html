@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>This is a simple HTML + CSS template!</h1>
+    <h2>Stivie tragon</h2>
+    <h2 class="texto_fami">fami</h2>
+
+    <script>
+      // Tipos de datos
+      var pi = 3.1416;
+      const nombre = "Karen";
+      let esApagado = false;
+
+      const fami = {
+        edad: 3,
+        raza: "pugberta",
+        tamano: 40,
+        peso: 15,
+        ladrar: function (sonido) {
+          console.log(sonido);
+        },
+      };
+
+      const suma = 20 + 50;
+
+      console.log("el valor de suma es: " + suma);
+
+      console.log(fami.peso);
+      fami.ladrar("guau");
+      fami.ladrar("chingar la madre");
+
+      function sumar(cantidad1, cantidad2) {
+        const resultado = cantidad1 + cantidad2;
+        return resultado;
+      }
+
+      console.log(sumar(2, 3));
+      console.log(sumar(30, 100));
+
+      function resta(numero1, numero2) {
+        return numero1 - numero2;
+      }
+
+      console.log(resta(15, 80));
+      console.log(resta(500, 430));
+
+      const miResta = resta(6000, 4000);
+      console.log(miResta);
+
+      console.log(sumar(miResta, 1000));
+      const miSuma = sumar(miResta, 5000);
+
+      console.log(resta(miResta, miSuma));
+
+      function division(numero1, numero2, numero3) {
+        return numero1 / numero2 / numero3;
+      }
+      const miDivision = division(miSuma, miResta, 100);
+      console.log(miDivision);
+
+      function multiplicacion(numero1, numero2, numero3, numero4) {
+        return numero1 * numero2 * numero3 * numero4;
+      }
+      const miMultiplicacion = multiplicacion(miSuma, miResta, miDivision, 1);
+      console.log(miMultiplicacion);
+    </script>
+  </body>
+</html>
